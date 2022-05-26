@@ -18,6 +18,7 @@
     <script language="javascript">
       function check() {
         chatChannelId = 123;
+        console.log(chatChannelId);
         location.href = "주피터.html?" + chatChannelId;
       }
     </script>
@@ -73,6 +74,7 @@
           prediction[0].className == "1 ahm" &&
           prediction[0].probability.toFixed(2) >= 0.9
         ) {
+          value = "1 ahm";
           labelContainer.childNodes[0].innerHTML = "1 ahm";
         }
         // 저항(ahm): 1, 용량(W): 0.25, 오차율(%): 1

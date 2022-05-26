@@ -6,6 +6,12 @@
 
     <title>Untitled</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+    <script language="javascript">
+      function check() {
+        chatChannelId ="결과 송출";
+        location.href = "결과.html?" + chatChannelId;
+      }
+    </script>
 
     <style type="text/css">
       pre {
@@ -19409,9 +19415,9 @@ all of MD as it is not optimized for dense, information rich UIs.
     <script language = "javascript">
     temp = location.href.split("?");
     data=temp[1].split("/");
-    chatChannelId = data[0];
-    document.write(chatChannelId);   //페이지에 전달받은 값 띄워서 확인하기 
-    console.log("TAGTAG : " + chatChannelId);    //콘솔에 전달받은 값 띄워서 확인하기
+    fromindex = data[0];
+    document.write(fromindex);   //페이지에 전달받은 값 띄워서 확인하기 
+    console.log("TAGTAG : " + fromindex);    //콘솔에 전달받은 값 띄워서 확인하기
 </script>
 
     <!-- MathJax configuration -->
@@ -19457,6 +19463,7 @@ all of MD as it is not optimized for dense, information rich UIs.
     data-jp-theme-light="true"
     data-jp-theme-name="JupyterLab Light"
   >
+      <button type="button" onclick="check()">확인하기</button>
     <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
       <div class="jp-Cell-inputWrapper">
         <div class="jp-InputArea jp-Cell-inputArea">

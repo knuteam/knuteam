@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
+    <?PHP
+        echo shell_exec("python script.py \"Parameter #1\" \"Parameter #2\"");
+        ?>
   <body>
     <div>Teachable Machine Image Model</div>
     <button type="button" onclick="init()">Start</button>
@@ -17,9 +19,9 @@
 
     <script language="javascript">
       function check() {
-        chatChannelId = 123;
+        chatChannelId = 12;
         console.log(chatChannelId);
-        location.href = "주피터.html?" + chatChannelId;
+        location.href = "두번째.html?" + chatChannelId;
       }
     </script>
 
